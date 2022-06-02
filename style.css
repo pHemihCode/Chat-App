@@ -1,0 +1,510 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    max-width:100%;
+    height:100vh;
+    background-color:  whitesmoke;
+    font-family:'Rubik', sans-serif;
+    font-size:1em;
+    position:relative;
+    overflow:hidden;
+}
+.phone-box-space{
+    margin:0 0.5em;
+}
+.first-clip{
+    background-color:hsl(281, 83%, 53%);
+    max-width:33%;
+    height:94vh;
+    border:none;
+    border-bottom-right-radius: 250px;
+    border-bottom-left-radius: 250px;
+    margin-left:-5em;
+    position:relative;
+}
+.phone-box{
+    height:88vh;
+    max-width:20%;
+    background-color: hsl(270, 20%, 96%);
+    border:10px solid white;
+    position:absolute;
+    z-index:1;
+    top:5%;
+    left:23%;
+    border-radius:1.5em;
+    box-shadow: 20px 20px 10px hsl(273, 27%, 92%);
+}
+.phonetop{
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    width:100%;
+    height:11vh;
+    border-top-left-radius:1.2em;
+    border-top-right-radius:1.2em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+button{
+    z-index:1;
+    width:50%;
+    height:3vh;
+    position:absolute;
+    left:25%;
+    border-bottom-right-radius:2em;
+    border-bottom-left-radius:2em;
+    border:none;
+    background-color: hsl(0, 0%, 100%);
+}
+h4{
+    color:hsl(270, 20%, 96%);
+    font-size:0.8em;
+    font-weight:400;
+}
+.name p{
+    font-size:0.6em;
+    color:hsl(276, 100%, 81%);
+    padding-top:0.3em;
+}
+.image img{
+    width:100%;
+    height:4vh;
+    border-radius:2em;
+    border: 1px solid hsl(270, 20%, 96%);
+}
+.image{
+    margin:0 0.5em;
+    margin-top:0.3em;
+}
+.image-name{
+    display:flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items:center;
+    position:absolute;
+    top:5vh;
+    margin-left:0.4em;
+}
+.phone-flex{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+i{
+    color:hsl(270, 20%, 96%);
+}
+.dot-icon i{
+    position:absolute;
+    left:90%;
+    top:7.5%;
+}
+.text-box{
+    margin-top:0.9em;
+}
+.text{
+    background-color: hsl(275, 39%, 89%);
+    border:none;
+    border-top-left-radius:0.6em ;
+    border-top-right-radius:0.6em ;
+    border-bottom-left-radius:0.2em ;
+    border-bottom-right-radius:0.6em ;
+    width:70%;
+    height:6.5vh;
+    margin-top:0.5em;
+}
+.text p{
+    color:hsl(276, 55%, 52%);
+    font-size:0.6em;
+    padding:0.5em 0;
+    padding-left:1em;
+    padding-right:1em;
+    line-height:1.5em;
+}
+.dog-images{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    margin-top:1em;
+}
+.dog-images img{
+    max-width: 16%;
+    height:6vh;
+    margin:0 0.3em;
+    border-radius: 0.5em;
+}
+.reply-combo{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
+}
+.reply{
+    background-color: hsl(0, 0%, 100%);
+    border:none;
+    border-top-left-radius:0.6em ;
+    border-top-right-radius:0.6em ;
+    border-bottom-left-radius:0.6em ;
+    border-bottom-right-radius:0.2em ;
+    width:71%;
+    height:6.5vh;
+    margin-top:0.8em;
+}
+.ex{
+    border:none;
+    border-top-left-radius:0.8em ;
+    border-top-right-radius:0.6em ;
+    border-bottom-left-radius:0.8em ;
+    border-bottom-right-radius:0.2em ;
+    width:44%;
+    height:4vh;
+    margin-top:0.5em;
+}
+.reply p{
+    color:hsl(276, 55%, 52%);
+    font-size:0.6em;
+    padding:0.5em 0;
+    padding-left:1em;
+    padding-right:0.7em;
+    line-height:1.5em;
+}
+.ex p{
+    padding-right:1em;
+    padding:0.4em 0; 
+    padding-left:1em;
+}
+.long-text{
+    height:9vh;
+    margin-top:0.9em;
+}
+.price{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:center;
+    background-image:linear-gradient(to right,  hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border:none;
+    border-top-left-radius:0.6em ;
+    border-top-right-radius:0.6em ;
+    border-bottom-left-radius:0.2em ;
+    border-bottom-right-radius:0.6em ;
+    width:85%;
+    height:5vh;
+    margin-top:0.5em;
+    color:hsl(270, 20%, 96%);
+    font-weight:300;
+    padding:0 1em;
+}
+input[type=radio]{
+    margin-right:0.4em;
+    margin-top:0.2em;
+}
+label{
+    margin-top:0.5em;
+    color:hsl(270, 20%, 96%);
+}
+.walk-time{
+    font-size:0.6em;
+    display:flex;
+}
+.dollar{
+    font-weight:bold;
+    font-size:0.9em;
+}
+.price-box{
+    margin-top:0.7em;
+}
+.phone-end{
+    background-color: hsl(0, 0%, 100%);
+    max-width:100%;
+    height:6vh;
+    display:flex;
+    align-items:center;
+    border-radius:10em;
+    padding-left:1.5em;
+    padding-right:0.5em;
+    margin-top:0.8em;
+    justify-content: space-between;
+}
+.phone-end input{
+    max-width:100%;
+    height:4vh;
+    border:none;
+    background-color: transparent;
+    font-size:0.6em;
+    color:hsl(206, 6%, 79%);
+    border-color:transparent;
+}
+input[type=text]{
+    font-size:0.6em;
+    color:hsl(206, 6%, 79%);
+}
+.icon-end{
+    background-color: hsl(271, 36%, 24%);
+    border:none;
+    border-radius:10em;
+    width:13%;
+    height:4vh;
+    text-align:center;
+    padding-top:0.3em;
+}
+.simple-para{
+    position:absolute;
+    left:53%;
+    top:40%;
+    max-width:41%;
+    z-index:2;
+}
+.simple-para h2{
+    font-weight:bold;
+    color:hsl(271, 36%, 24%);
+    font-size:2.3em;
+}
+.simple-para p{
+    color:hsl(270, 7%, 64%);
+    line-height:1.6em;
+    font-size:1em;
+    margin-top:1em;
+    padding-right:4em;
+}
+.second-clip{
+    background-color:hsl(281, 83%, 53%);
+    opacity:0.02;
+    max-width:35%;
+    height:100vh;
+    border:none;
+    border-top-right-radius:250px;
+    border-top-left-radius: 250px;
+    margin-left:5em;
+    position:relative;
+    left:73%;
+    margin-top:-32.45em;
+    
+}
+/* -----------------------------------------------------375PX--------------------------------------------------------- */
+@media all and (max-width:375px) {
+    body{
+        max-width:100%;
+        height:100vh;
+        position:relative;
+        overflow:hidden;
+    }
+    .first-clip{
+        max-width:50%;
+        height:73vh;
+        margin-left:0em;
+        position:relative;
+        border-bottom-right-radius:250px;
+        border-bottom-left-radius: 0px;
+    }
+    .phone-box{
+        height:70vh;
+        max-width:60%;
+        top:1%;
+        left:23%;
+    }
+    .phonetop{
+        height:9.5vh;
+    }
+    button{
+        height:3vh;
+        top:-1%;
+    }
+    .image-name{
+        position:absolute;
+        top:5%;
+        margin-left:0.4em;
+    }
+    h4{
+        font-size:0.6em;
+    }
+    .name p{
+        font-size:0.4em;
+    }
+    .dot-icon i{
+        top:7.8%;
+    }
+    i{
+       font-size:0.8em;
+    }
+    .text-box{
+        margin-top:0.3em;
+    }
+    .text{
+        height:5vh;
+    }
+    .text p{
+        font-size:0.5em;
+        padding:0.7em 0;
+        padding-left:1em;
+        padding-right:2em;
+    }
+    .dog-images{
+        margin-top:0.8em;
+    }
+    .dog-images img{
+        max-width: 17%;
+        height:5vh;
+    }
+    .reply-combo{
+         margin-top:-0.3em;
+    }
+    .reply{
+        height:5vh;
+    }
+    .ex{
+        height:4vh;
+        width:42%;
+    }
+    .reply p{
+        font-size:0.5em;
+        padding:0.7em 0;
+        padding-left:1em;
+        padding-right:1.5em;
+    }
+    .ex p{
+        padding-right:0.1em;
+        padding:0.9em 0; 
+        padding-left:1em;
+    }
+    .long-text{
+        height:6.5vh;
+        margin-top:0.9em;
+    }
+    .price{
+        height:4vh;
+    }
+    input[type=radio]{
+        margin-right:0.4em;
+        margin-top:0.06em;
+    }
+    .walk-time{
+        font-size:0.45em;
+    }
+    .dollar{
+        font-size:0.6em;
+    }
+    .price-box{
+        margin-top:0.4em;
+    }
+    .phone-end{
+        height:4.5vh;
+    }
+    input[type=text]{
+        font-size:0.5em;
+    }
+    .icon-end{
+        height:3vh;
+        padding-top:0.05em;
+    }
+    .simple-para{
+        position:absolute;
+        left:0%;
+        top:73%;
+        max-width:100%;
+        z-index:2;
+        text-align:center;
+    }
+    .simple-para h2{
+        font-size:2em;
+    }
+    .simple-para p{
+        line-height:1.6em;
+        font-size:0.8em;
+        margin-top:1em;
+        padding-right:0;
+        padding:0 5em;
+    }
+    .second-clip{
+        background-color:hsl(281, 83%, 53%);
+        opacity:0.06;
+        border-top-right-radius:0px;
+        border-top-left-radius: 250px;
+        max-width:50%;
+        height:53vh;
+        border:none;
+        margin-left:11.5em;
+        position:relative;
+        left:1%;
+        margin-top:-5em;   
+    }
+}
+/* -----------------------------------------------------1440PX------------------------------------------------------- */
+@media all and (width:1440px){
+    .first-clip{
+        background-color:hsl(281, 83%, 53%);
+        max-width:33%;
+        height:77vh;
+        border:none;
+        border-bottom-right-radius: 250px;
+        border-bottom-left-radius: 250px;
+        margin-left:-5em;
+        position:relative;
+    }
+    .phone-box{
+        height:78vh;
+        top:5%;
+    }
+    .dot-icon i{
+        left:90%;
+        top:8.5%;
+    }
+    button{
+        top:-1%;
+    }
+    .text{
+        width:60%;
+        height:5.5vh;
+    }
+    .text p{
+        padding-right:1em;
+    }
+    .reply{
+        width:60%;
+        height:5.5vh;
+    }
+    .ex{
+        width:40%;
+        height:3vh;
+    }
+    .reply p{
+        padding-left:1em;
+        padding-right:1em;
+    }
+    .ex p{
+        padding-left:1em;
+    }
+    .long-text{
+        height:7.5vh;
+        margin-top:0.9em;
+    }
+    .icon-end{
+        border-radius:10em;
+        width:14%;
+        height:4vh;
+        padding-top:0.5em;
+    }
+    .simple-para p{
+        line-height:1.6em;
+        font-size:0.8em;
+        margin-top:1em;
+        padding-right:0;
+        padding:0 0em;
+    }
+    .simple-para{
+        position:absolute;
+        left:53%;
+        top:40%;
+        max-width:25%;
+        z-index:2;
+    }
+    .second-clip{
+        border-top-right-radius:0px;
+        border-top-left-radius: 250px;
+        max-width:25%;
+        height:85vh;
+        margin-right:-20em;
+        left:69.3%;
+        margin-top:-31em;   
+    }
+    
+}
